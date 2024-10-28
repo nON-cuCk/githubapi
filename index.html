@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Display Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 id="displayText">This is your text</h1>
+    <div class="text-box" id="textDisplay">Your text goes here</div> <!-- Read-only text display -->
+</div>
+
+<script>
+    // Simulated API fetching function (replace this with your actual API call)
+    function fetchText() {
+        // Simulating an API response (use fetch or axios in a real scenario)
+        const simulatedApiResponse = null; // Simulate no text available
+        const displayElement = document.getElementById('displayText');
+        displayElement.innerText = simulatedApiResponse || "Your text goes here";
+    }
+
+    window.onload = fetchText; // Call fetchText on page load
+</script>
+</body>
+</html>
